@@ -75,7 +75,7 @@ https://Virtualbox.org/wiki/downloads
 
 https://www.VagrantUp.com/downloads.html
 
-https://githumb.com/benpiper/puppet-fundamentals-lab
+https://github.com/benpiper/puppet-fundamentals-lab
 
 
-Lab Apache and 
+ 
