@@ -39,10 +39,15 @@ sudo yum install httpd
 
 Note the different providers (apt vs. yum).
 
+## <a name="Manifests"> Manifests</a>
 Manifest files are stored by default in folder 
 
   <strong>etc/puppet/manifests/site.pp</strong> (pp = public program).
   
+`etc/puppet` is the value of default <strong>$confdir</strong>.
+
+
+## <a name="DirectoryEnv"> Directory Environments</a>
 Alternately, several enviornments (dev, test, prod) 
 can be setup with directory enviornments stored in different folders,
 defined in:
