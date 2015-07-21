@@ -37,7 +37,26 @@ On Redhat:
 sudo yum install httpd
 ```
 
-Note the different providers (apt vs. yum);
+Note the different providers (apt vs. yum).
+
+Manifest files are stored by default in folder 
+
+  <strong>etc/puppet/manifests/site.pp</strong> (pp = public program).
+  
+Alternately, several enviornments (dev, test, prod) 
+can be setup with directory enviornments stored in different folders,
+defined in:
+
+    <strong>etc/puppet/puppet.conf</strong>
+
+It contains sections: [master], [agent], and [main] (if master and agent are not setup):
+
+  * logdir = /var/log/puppet
+  * rundir = /var/run/puppet
+  * ssldir = $vardir/ssl
+
+The default environmenttimeout is 5 minutes when a server is checked for changes.
+
 
 ## <a name="PuppetMaster"> PuppetMaster Server</a>
 A PuppetMaster server, a Ruby on Rails app running on Linux (Centos).
