@@ -1,3 +1,5 @@
+This page has migrated to https://wilsonmar.github.io/puppet
+
 This page provides a quick yet technically deep introduction to Puppet for DevOps automation.
 
 Information here is a combination of several classes I had taken on Puppet:
@@ -17,15 +19,7 @@ In the configuration management software market:
 * Ansible 
 * CF Engine (first relased 1993)
 
-## <a name="Advantages"> Advantages to Puppet</a>
-
-Puppet is used to automate a way to ensure that all servers have consistent configuration.
-
-Puppet can do this across different versions of different operating systems!
-This is possible because Puppet <strong>manifest</strong> files are declarative in that they 
-specify the configuration desired (the "what"),
-whereas server shell scripts are more complicated since they specify <strong>procedural</strong> (the "how"),
-which differ for different operating systems. For example, the command to install an Apache web server on Ubuntu:
+ For example, the command to install an Apache web server on Ubuntu:
 
 ```
 sudo apt-get install apache2
